@@ -56,7 +56,7 @@
 
                                             <td>
                                                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('products.show',$product->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Mostar') }}</a>
+                                                    //borramos el codigo del boton mostrar
                                                     <a class="btn btn-sm btn-success" href="{{ route('products.edit',$product->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
                                                     @csrf
                                                     @method('DELETE')
